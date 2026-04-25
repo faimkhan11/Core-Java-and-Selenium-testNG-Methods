@@ -1,0 +1,36 @@
+class Main {
+    public static void main(String[] args) 
+    {
+        
+        String s1 = "Silent";
+        
+        String s2 = "Listen";
+        
+        s1 = s1.toLowerCase();
+        
+        s2 = s2.toLowerCase();
+        
+        if(s1.length()!=s2.length())
+        {
+            System.out.println("Not Analog");
+        }
+        else
+        {
+            char a[] = s1.toCharArray();
+            char b[] = s2.toCharArray();
+            
+            Arrays.sort(a);
+            Arrays.sort(b);
+            
+            if(Arrays.equals(a,b))
+            {
+                System.out.println("Analog");
+            }
+            else
+            {
+                System.out.println("Not Analog");
+            }
+        }
+        
+    }
+}
