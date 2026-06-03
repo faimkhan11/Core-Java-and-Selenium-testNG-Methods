@@ -1,33 +1,38 @@
 package OOPS_Concepts;
 
-public class Encapsulation 
+class Main
 {
-  //All veriables should be private and we use get set method to invoke the veriables
-	
-	private String name;
-	private String password;
-	
-	void setname(String stdname)
-	{
-		name=stdname;
-		
-		
-	}
-	
-	String getname()
-	{
-		return name;
-				
-	}
-	
-	
-	void setpassword(String stdpassword)
-	{
-		password=stdpassword;
-	}
-	
-	String getpassword()
-	{
-		return password;
-	}
+    public static void main (String[] args)
+    {
+      Employee emp = new Employee();
+      emp.setName("Faim");
+      emp.setID("105");
+      
+      System.out.println(emp.getName());
+      System.out.println(emp.getID());
+    }
 }
+
+class Employee
+{
+    private String name;
+    private String ID;
+    
+    public void setName(String name)
+    {
+        this.name=name;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void setID(String ID)
+    {
+        this.ID = ID;
+    }
+    public String getID()
+    {
+        return ID;
+    }
+}
+
